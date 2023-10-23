@@ -26,6 +26,8 @@
         </div>
     </div>
 </div>
+
+<!-- used fragment that will show all jobs -->
 <div th:fragment="results-table">
     <table class="job-listing" th:each="job:${jobs}">
         <tr>
@@ -51,6 +53,7 @@
     </table>
 </div>
 
+<!-- used fragment to print out the results that were searched -->
 <div th:fragment="search-results-table">
     <table class="job-listing" th:each="job:${jobs}">
         <tr>
